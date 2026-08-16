@@ -37,8 +37,12 @@ public class Calculator {
                 break;
 
             case '/':
+                if (Zahl2 == 0) {
+                    System.out.println ("Fehler: Division durch Null ist nicht möglich!);
+                } else {
                 ergebnis = zahl1 / zahl2;
                 System.out.println("Ergebnis: " + ergebnis);
+                }     
                 break;
 
             default:
